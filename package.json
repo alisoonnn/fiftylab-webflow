@@ -1,0 +1,29 @@
+{
+  "name": "fiftylab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.21",
+    "cssnano": "^7.0.6",
+    "gulp-clean": "^0.4.0",
+    "gulp-postcss": "^10.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-replace": "^1.1.4",
+    "gulp-sass": "^6.0.1",
+    "gulp-uglify": "^3.0.2",
+    "gulp-webp": "^5.0.0",
+    "parcel": "^2.14.2",
+    "sass": "^1.86.0"
+  },
+  "devDependencies": {
+    "gulp": "^5.0.0"
+  },
+  "type": "module"
+}
