@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lineup</title>
+    <title>Artiste</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body class="body-lineup">
+<body class="artiste-individuel">
+    
+       <!-- HEADER -->
 
-    <!-- HEADER -->
-
-    <div class="menu-toggle">
+       <div class="menu-toggle">
         <div class="menu mobile">
         </div>
         <div class="menu-border"></div>
@@ -63,6 +63,52 @@
 </header>
 
 <!-- FIN HEADER -->
+
+<!-- container artist -->
+
+<main class="container-artist">
+    <section class="artist-1">
+    <article class="cutout-and-fisheye">
+        <img src="img/artists/4nouki-01.webp" alt="" class="cutout-detail">
+        <img src="img/artists/4nouki-02.webp" alt="" class="fisheye-detail">
+    </article>
+    <article class="artist-info">
+        <div class="artist-name">4nouki</div>
+        <div class="artist-date">MER 11 NOV.</div>
+        <div class="artist-venues"></div>
+    </article>
+    <article class="artist-bonus">
+        <ul class="ul-artist-origin">
+            <li class="li-artist-origin-title">ORIGIN</li>
+            <li class="li-artist-origin"></li>
+        </ul>
+        <ul class="ul-artist-genre">
+            <li class="li-artiste-genre-title"></li>
+            <li class="li-artiste-genre"></li>
+            <li class="li-artiste-genre"></li>
+            <li class="li-artiste-genre"></li>
+        </ul>
+        <ul class="ul-forfansof">
+            <li class="li-forfansof-title"></li>
+            <li class="li-forfansof"></li>
+            <li class="li-forfansof"></li>
+            <li class="li-forfansof"></li>
+        </ul>
+    </article>
+    </section>
+    <section class="artist-2">
+        <article class="artist-bio">
+            <div class="div-artist-bio"></div>
+            <div class="div-artist-social-media"></div>
+        </article>
+        <article class="artist-clip-ytb">
+            <div class="w-video w-embed"></div>
+            <a href="https://youtu.be/5fgyIsxr--0?si=tcbaAWtC9n8tuFHu" class="link-for-youtube-video w-inline-block"></a>
+        </article>
+    </section>
+</main>
+
+<!-- fin container artist -->
 
 <!-- bckgrnd imgs -->
 
@@ -1410,405 +1456,109 @@
     <path class="st0" d="M245.3,172.1c-0.1-3.6,0.2-4.1,3.2-4.2C246.7,168.9,246.2,170.7,245.3,172.1z"></path>
 </svg></div>
 
-<!-- fin bckgrnd imgs -->
-
-<!-- section test stroke -->
-
-<!-- <div class="div-test-stroke">
-    <p class="test-stroke artist-name-svg"> nom d'artiste</p>
-    <p class="test-stroke artist-name"> nom d'artiste</p>
-</div> -->
-
-<!-- fin section test stroke -->
-
-<!-- container -->
-
-<main class="container-lineup">
-
-<!-- section filtre -->
-
-    <section class="filtres">
-        <button id="all" class="filter-all on">All</button>
-        <button id="mercredi" class="filter-mercredi">12/11</button>
-        <button id="jeudi" class="filter-jeudi">13/11</button>
-        <button id="vendredi" class="filter-vendredi">14/11</button>
-    </section>
-
-<!-- fin section filtre -->
-
-<!-- section lineup -->
-
-<section class="section-lineup-list">
-
-    <!-- en gros, faut faire qu'il y ait à chaque fois l'option bulle ou cutout, s'il y a et seulement s'il les deux options -> then si c'est pair et que c'est dans les 4 premier, take the bubble option, si c'est pair et dans les 4 après les 4 premiers, take the cutout. Si ce n'est impair et dans les 4 premier, take the cutout class, si c'est impair et les 4 après les 4 premier, take tue bubble option (et ainsi de suite pcq il faut que ça change par rangé et les rangé sont de 4) sinon s'il y a pas les deux options, just show the img qu'il y a-->
-    <div class="w-dyn-item">
-        <a href="/artist-detail.html" class="a-ind-lineup" data-filter="mercredi">
-          <article class="artist-ind-lineup">
-            <img class="cutout" src="img/artists/4nouki-01.webp" alt="" class="lineup-page-artist-img">
-            <img class="bubble" src="img/artists/4nouki-02.webp" alt="" class="lineup-page-artist-img">
-            <div class="artist-ind-info">
-              <div class="whole-artist-name-and-code">
-                <img src="img/4nouki/anouki-name.svg" alt="">
-              </div>
-              <div class="whole-date-artiste">
-                <img src="img/4nouki/anouki-date.svg" alt="">
-              </div>
-            </div>
-          </article>
-        </a>
-      </div>
-      
-      <div class="w-dyn-item">
-        <a href="" class="a-ind-lineup" data-filter="jeudi">
-          <article class="artist-ind-lineup">
-            <img src="img/artists/bricknasty-bubble.webp" alt="" class="lineup-page-artist-img">
-            <div class="artist-ind-info">
-              <div class="whole-artist-name-and-code">
-                <img src="img/bricknasty/bricknasty-name.svg" alt="">
-              </div>
-              <div class="whole-date-artiste">
-                <img src="img/bricknasty/bricknasty-date.svg" alt="">
-              </div>
-            </div>
-          </article>
-        </a>
-      </div>
-      
-      <div class="w-dyn-item">
-        <a href="" class="a-ind-lineup" data-filter="vendredi">
-          <article class="artist-ind-lineup">
-            <img src="img/artists/helena-bubble.webp" alt="" class="lineup-page-artist-img">
-            <div class="artist-ind-info">
-              <div class="whole-artist-name-and-code">
-                <img class="bigger" src="img/helenacasella/helena-cassella-name.svg" alt="">
-              </div>
-              <div class="whole-date-artiste">
-                <img src="img/helenacasella/helena-cassella-date.svg" alt="">
-              </div>
-            </div>
-          </article>
-        </a>
-      </div>
-      
-      <div class="w-dyn-item">
-        <a href="" class="a-ind-lineup" data-filter="jeudi">
-          <article class="artist-ind-lineup">
-            <img class="bubble" src="img/artists/billie-01.webp" alt="" class="lineup-page-artist-img">
-            <img class="cutout" src="img/artists/billie-02.webp" alt="" class="lineup-page-artist-img">
-            <div class="artist-ind-info">
-              <div class="whole-artist-name-and-code">
-                <img class="smaller" src="img/billie/billie-name.svg" alt="">
-              </div>
-              <div class="whole-date-artiste">
-                <img src="img/billie/billie-date.svg" alt="">
-              </div>
-            </div>
-          </article>
-        </a>
-      </div>
-    <div class="w-dyn-item">
-        <a href="" class="a-ind-lineup" data-filter="mercredi">
-          <article class="artist-ind-lineup">
-            <img class="cutout" src="img/artists/4nouki-01.webp" alt="" class="lineup-page-artist-img">
-            <img class="bubble" src="img/artists/4nouki-02.webp" alt="" class="lineup-page-artist-img">
-            <div class="artist-ind-info">
-              <div class="whole-artist-name-and-code">
-                <img src="img/4nouki/anouki-name.svg" alt="">
-              </div>
-              <div class="whole-date-artiste">
-                <img src="img/4nouki/anouki-date.svg" alt="">
-              </div>
-            </div>
-          </article>
-        </a>
-      </div>
-      
-      <div class="w-dyn-item">
-        <a href="" class="a-ind-lineup" data-filter="jeudi">
-          <article class="artist-ind-lineup">
-            <img src="img/artists/bricknasty-bubble.webp" alt="" class="lineup-page-artist-img">
-            <div class="artist-ind-info">
-              <div class="whole-artist-name-and-code">
-                <img src="img/bricknasty/bricknasty-name.svg" alt="">
-              </div>
-              <div class="whole-date-artiste">
-                <img src="img/bricknasty/bricknasty-date.svg" alt="">
-              </div>
-            </div>
-          </article>
-        </a>
-      </div>
-      
-      <div class="w-dyn-item">
-        <a href="" class="a-ind-lineup" data-filter="vendredi">
-          <article class="artist-ind-lineup">
-            <img src="img/artists/helena-bubble.webp" alt="" class="lineup-page-artist-img">
-            <div class="artist-ind-info">
-              <div class="whole-artist-name-and-code">
-                <img class="bigger" src="img/helenacasella/helena-cassella-name.svg" alt="">
-              </div>
-              <div class="whole-date-artiste">
-                <img src="img/helenacasella/helena-cassella-date.svg" alt="">
-              </div>
-            </div>
-          </article>
-        </a>
-      </div>
-      
-      <div class="w-dyn-item">
-        <a href="" class="a-ind-lineup" data-filter="jeudi">
-          <article class="artist-ind-lineup">
-            <img class="bubble" src="img/artists/billie-01.webp" alt="" class="lineup-page-artist-img">
-            <img class="cutout" src="img/artists/billie-02.webp" alt="" class="lineup-page-artist-img">
-            <div class="artist-ind-info">
-              <div class="whole-artist-name-and-code">
-                <img class="smaller" src="img/billie/billie-name.svg" alt="">
-              </div>
-              <div class="whole-date-artiste">
-                <img src="img/billie/billie-date.svg" alt="">
-              </div>
-            </div>
-          </article>
-        </a>
-      </div>
-    <div class="w-dyn-item">
-        <a href="" class="a-ind-lineup" data-filter="mercredi">
-          <article class="artist-ind-lineup">
-            <img class="cutout" src="img/artists/4nouki-01.webp" alt="" class="lineup-page-artist-img">
-            <img class="bubble" src="img/artists/4nouki-02.webp" alt="" class="lineup-page-artist-img">
-            <div class="artist-ind-info">
-              <div class="whole-artist-name-and-code">
-                <img src="img/4nouki/anouki-name.svg" alt="">
-              </div>
-              <div class="whole-date-artiste">
-                <img src="img/4nouki/anouki-date.svg" alt="">
-              </div>
-            </div>
-          </article>
-        </a>
-      </div>
-      
-      <div class="w-dyn-item">
-        <a href="" class="a-ind-lineup" data-filter="jeudi">
-          <article class="artist-ind-lineup">
-            <img src="img/artists/bricknasty-bubble.webp" alt="" class="lineup-page-artist-img">
-            <div class="artist-ind-info">
-              <div class="whole-artist-name-and-code">
-                <img src="img/bricknasty/bricknasty-name.svg" alt="">
-              </div>
-              <div class="whole-date-artiste">
-                <img src="img/bricknasty/bricknasty-date.svg" alt="">
-              </div>
-            </div>
-          </article>
-        </a>
-      </div>
-      
-      <div class="w-dyn-item">
-        <a href="" class="a-ind-lineup" data-filter="vendredi">
-          <article class="artist-ind-lineup">
-            <img src="img/artists/helena-bubble.webp" alt="" class="lineup-page-artist-img">
-            <div class="artist-ind-info">
-              <div class="whole-artist-name-and-code">
-                <img class="bigger" src="img/helenacasella/helena-cassella-name.svg" alt="">
-              </div>
-              <div class="whole-date-artiste">
-                <img src="img/helenacasella/helena-cassella-date.svg" alt="">
-              </div>
-            </div>
-          </article>
-        </a>
-      </div>
-      
-      <div class="w-dyn-item">
-        <a href="" class="a-ind-lineup" data-filter="jeudi">
-          <article class="artist-ind-lineup">
-            <img class="bubble" src="img/artists/billie-01.webp" alt="" class="lineup-page-artist-img">
-            <img class="cutout" src="img/artists/billie-02.webp" alt="" class="lineup-page-artist-img">
-            <div class="artist-ind-info">
-              <div class="whole-artist-name-and-code">
-                <img class="smaller" src="img/billie/billie-name.svg" alt="">
-              </div>
-              <div class="whole-date-artiste">
-                <img src="img/billie/billie-date.svg" alt="">
-              </div>
-            </div>
-          </article>
-        </a>
-      </div>
-    <div class="w-dyn-item">
-        <a href="" class="a-ind-lineup" data-filter="mercredi">
-          <article class="artist-ind-lineup">
-            <img class="cutout" src="img/artists/4nouki-01.webp" alt="" class="lineup-page-artist-img">
-            <img class="bubble" src="img/artists/4nouki-02.webp" alt="" class="lineup-page-artist-img">
-            <div class="artist-ind-info">
-              <div class="whole-artist-name-and-code">
-                <img src="img/4nouki/anouki-name.svg" alt="">
-              </div>
-              <div class="whole-date-artiste">
-                <img src="img/4nouki/anouki-date.svg" alt="">
-              </div>
-            </div>
-          </article>
-        </a>
-      </div>
-      
-      <div class="w-dyn-item">
-        <a href="" class="a-ind-lineup" data-filter="jeudi">
-          <article class="artist-ind-lineup">
-            <img src="img/artists/bricknasty-bubble.webp" alt="" class="lineup-page-artist-img">
-            <div class="artist-ind-info">
-              <div class="whole-artist-name-and-code">
-                <img src="img/bricknasty/bricknasty-name.svg" alt="">
-              </div>
-              <div class="whole-date-artiste">
-                <img src="img/bricknasty/bricknasty-date.svg" alt="">
-              </div>
-            </div>
-          </article>
-        </a>
-      </div>
-      
-      <div class="w-dyn-item">
-        <a href="" class="a-ind-lineup" data-filter="vendredi">
-          <article class="artist-ind-lineup">
-            <img src="img/artists/helena-bubble.webp" alt="" class="lineup-page-artist-img">
-            <div class="artist-ind-info">
-              <div class="whole-artist-name-and-code">
-                <img class="bigger" src="img/helenacasella/helena-cassella-name.svg" alt="">
-              </div>
-              <div class="whole-date-artiste">
-                <img src="img/helenacasella/helena-cassella-date.svg" alt="">
-              </div>
-            </div>
-          </article>
-        </a>
-      </div>
-      
-      <div class="w-dyn-item">
-        <a href="" class="a-ind-lineup" data-filter="jeudi">
-          <article class="artist-ind-lineup">
-            <img class="bubble" src="img/artists/billie-01.webp" alt="" class="lineup-page-artist-img">
-            <img class="cutout" src="img/artists/billie-02.webp" alt="" class="lineup-page-artist-img">
-            <div class="artist-ind-info">
-              <div class="whole-artist-name-and-code">
-                <img class="smaller" src="img/billie/billie-name.svg" alt="">
-              </div>
-              <div class="whole-date-artiste">
-                <img src="img/billie/billie-date.svg" alt="">
-              </div>
-            </div>
-          </article>
-        </a>
-      </div>
-      
-
-</section>
-    
-
-</main>
+<!-- fin bckgrnd imgs -->  
 
 
-<div class="wrapper-footer">
-    <div class="footer-static">
-        <article class="footer-socials">
-            <div class="email">
-                hello@fiftylab.eu
+<footer>
+    <article class="footer-partners w-dyn-list">
+        <div role="list" class="partners w-dyn-items">
+            <div role="listitem" class="partners-list-item w-dyn-item">
+                <img src="https://cdn.prod.website-files.com/67d037daafc2a723ab14fadc/67d96b2971b6a5a937b75704_fl25-sponsors-region-bruxelles.svg" loading="lazy" alt="">
             </div>
-            <div class="socials-icons">
-                <img src="img/spotify-icon.svg" alt="">
-                <img src="img/tiktok-icon.svg" alt="">
-                <img src="img/insta-icon.svg" alt="">
-                <img src="img/fb-icon.svg" alt="">
+            <div role="listitem" class="partners-list-item w-dyn-item">
+                <img src="https://cdn.prod.website-files.com/67d037daafc2a723ab14fadc/67d96b1ba76a2e7743b62bad_fl25-sponsors-bxl-laville-stad.svg" loading="lazy" alt="">
+            </div>
+            <div role="listitem" class="partners-list-item w-dyn-item">
+                <img src="https://cdn.prod.website-files.com/67d037daafc2a723ab14fadc/67d96b44dbbfe0ac49da8ac6_fl25-sponsors-federation-wallonie-bruxelles.svg" loading="lazy" alt="">
+            </div>
+                <div role="listitem" class="partners-list-item w-dyn-item">
+                    <img src="https://cdn.prod.website-files.com/67d037daafc2a723ab14fadc/67d96b031026aece347d10d7_fl25-sponsors-wallonie-bruxelles-musiques.svg" loading="lazy" alt="">
+                </div>
+                <div role="listitem" class="partners-list-item w-dyn-item">
+                    <img src="https://cdn.prod.website-files.com/67d037daafc2a723ab14fadc/67d96af9a2954603df8b095c_fl25-sponsors-vi.be.svg" loading="lazy" alt="">
+                </div>
+                <div role="listitem" class="partners-list-item w-dyn-item">
+                    <img src="https://cdn.prod.website-files.com/67d037daafc2a723ab14fadc/67d96b0e41ed811292a7b77a_fl25-sponsors-belgium-booms.svg" loading="lazy" alt="">
+                </div>
+                <div role="listitem" class="partners-list-item w-dyn-item">
+                    <img src="https://cdn.prod.website-files.com/67d037daafc2a723ab14fadc/67d96b90e7534634e71d37d1_fl25-sponsors-bxl-entreprendre.svg" loading="lazy" alt="">
+                </div>
+                <div role="listitem" class="partners-list-item w-dyn-item">
+                    <img src="https://cdn.prod.website-files.com/67d037daafc2a723ab14fadc/67d96b54072a918683082154_fl25-sponsors-court-circuit.svg" loading="lazy" alt="">
+                </div>
+                <div role="listitem" class="partners-list-item w-dyn-item">
+                    <img src="https://cdn.prod.website-files.com/67d037daafc2a723ab14fadc/67d96b68f2e938916da30cf2_fl25-sponsors-conseil-de-la-musique.svg" loading="lazy" alt="">
+                </div>
+                <div role="listitem" class="partners-list-item w-dyn-item">
+                    <img src="https://cdn.prod.website-files.com/67d037daafc2a723ab14fadc/67d96be911a34a6a6cc475da_fl25-sponsors-see-tickets.svg" loading="lazy" alt="">
+                </div>
+                <div role="listitem" class="partners-list-item w-dyn-item">
+                    <img src="https://cdn.prod.website-files.com/67d037daafc2a723ab14fadc/67d96b4e64474618a513e22c_fl25-sponsors-sabam-for-culture.svg" loading="lazy" alt=""></div>
+                    <div role="listitem" class="partners-list-item w-dyn-item">
+                        <img src="https://cdn.prod.website-files.com/67d037daafc2a723ab14fadc/67d96b7f39e75bdd38d68dc6_fl25-sponsors-playright.svg" loading="lazy" alt="">
+                    </div>
+                    <div role="listitem" class="partners-list-item w-dyn-item">
+                        <img src="https://cdn.prod.website-files.com/67d037daafc2a723ab14fadc/67d96b5e1f84c62cbf76da0d_fl25-sponsors-lotterie-nationale.svg" loading="lazy" alt="">
+                    </div>
+                    <div role="listitem" class="partners-list-item w-dyn-item">
+                        <img src="https://cdn.prod.website-files.com/67d037daafc2a723ab14fadc/67d96bb04335c70c9b20ab04_fl25-sponsors-ra.svg" loading="lazy" alt="">
+                    </div>
+                    <div role="listitem" class="partners-list-item w-dyn-item">
+                        <img src="https://cdn.prod.website-files.com/67d037daafc2a723ab14fadc/67d96ba816eaa408adbae755_fl25-sponsors-fooding.svg" loading="lazy" alt="">
+                    </div>
+                    <div role="listitem" class="partners-list-item w-dyn-item">
+                        <img src="https://cdn.prod.website-files.com/67d037daafc2a723ab14fadc/67d96b89abda88aa4abe458d_fl25-sponsors-jam.svg" loading="lazy" alt="">
+                    </div>
+                    <div role="listitem" class="partners-list-item w-dyn-item">
+                        <img src="https://cdn.prod.website-files.com/67d037daafc2a723ab14fadc/67d96b99c6037c23fa12c76c_fl25-sponsors-kiosk.svg" loading="lazy" alt="">
+                    </div>
+                    <div role="listitem" class="partners-list-item w-dyn-item">
+                        <img src="https://cdn.prod.website-files.com/67d037daafc2a723ab14fadc/67d96bbe420d8bd0b7324956_fl25-sponsors-konbini.svg" loading="lazy" alt="">
+                    </div>
+                    <div role="listitem" class="partners-list-item w-dyn-item">
+                        <img src="https://cdn.prod.website-files.com/67d037daafc2a723ab14fadc/67d96bc611a34a6a6cc456de_fl25-sponsors-ab.svg" loading="lazy" alt="">
+                    </div>
+                    <div role="listitem" class="partners-list-item w-dyn-item">
+                        <img src="https://cdn.prod.website-files.com/67d037daafc2a723ab14fadc/67d96bcf8892a5cadfc73273_fl25-sponsors-beurschouwburg.svg" loading="lazy" alt="">
+                    </div>
+                    <div role="listitem" class="partners-list-item w-dyn-item">
+                        <img src="https://cdn.prod.website-files.com/67d037daafc2a723ab14fadc/67d96bd55aef4a098f710d1c_fl25-sponsors-beurs.svg" loading="lazy" alt="">
+                    </div>
+                    <div role="listitem" class="partners-list-item w-dyn-item">
+                        <img src="https://cdn.prod.website-files.com/67d037daafc2a723ab14fadc/67d96bdd724f7f60d38033eb_fl25-sponsors-ritcs.svg" loading="lazy" alt="">
+                    </div>
+                </div>
+            </article>
+        </footer>
+
+        <!-- footer -->
+
+<div class="footer-static desktop">
+    <article class="footer-socials">
+        <div class="email">
+            <a href="mailto:hello@fiftylab.eu">hello@fiftylab.eu<br>
+            </a>
+        </div>
+        <div class="socials-icons">
+            <a href="https://open.spotify.com/user/31tcagoeqjk53rmvnpcbson3jday" target="_blank" class="w-inline-block">
+                <img src="https://cdn.prod.website-files.com/67c5be41ad20fc69c3a6c74f/67c6d5dfba1ffeb9f260aa27_spotify-icon.svg" loading="lazy" alt="">
+            </a>
+            <a href="https://www.tiktok.com/@fiftylabmusicfestival" target="_blank" class="w-inline-block">
+                <img src="https://cdn.prod.website-files.com/67c5be41ad20fc69c3a6c74f/67d000b82ba1c299f447e564_tiktok-icon.svg" loading="lazy" alt="">
+            </a>
+            <a href="https://www.instagram.com/fiftylab_festival/" target="_blank" class="w-inline-block">
+                <img src="https://cdn.prod.website-files.com/67c5be41ad20fc69c3a6c74f/67c6d6f9812074fdee7b5398_insta-icon.svg" loading="lazy" alt=""></a><a href="https://www.facebook.com/fiftylab/" target="_blank" class="w-inline-block">
+                    <img src="https://cdn.prod.website-files.com/67c5be41ad20fc69c3a6c74f/67efed45d27dd6fbd7b69dbc_fb-icon.svg" loading="lazy" alt="">
+                </a>
             </div>
         </article>
     </div>
-</div>
 
-<footer>
-        <article class="footer-partners w-dyn-list">
-            <div role="list" class="partners w-dyn-items">
-                <div role="listitem" class="partners-list-item w-dyn-item">
-                    <img src="https://cdn.prod.website-files.com/67d037daafc2a723ab14fadc/67d96b2971b6a5a937b75704_fl25-sponsors-region-bruxelles.svg" loading="lazy" alt="">
-                </div>
-                <div role="listitem" class="partners-list-item w-dyn-item">
-                    <img src="https://cdn.prod.website-files.com/67d037daafc2a723ab14fadc/67d96b1ba76a2e7743b62bad_fl25-sponsors-bxl-laville-stad.svg" loading="lazy" alt="">
-                </div>
-                <div role="listitem" class="partners-list-item w-dyn-item">
-                    <img src="https://cdn.prod.website-files.com/67d037daafc2a723ab14fadc/67d96b44dbbfe0ac49da8ac6_fl25-sponsors-federation-wallonie-bruxelles.svg" loading="lazy" alt="">
-                </div>
-                    <div role="listitem" class="partners-list-item w-dyn-item">
-                        <img src="https://cdn.prod.website-files.com/67d037daafc2a723ab14fadc/67d96b031026aece347d10d7_fl25-sponsors-wallonie-bruxelles-musiques.svg" loading="lazy" alt="">
-                    </div>
-                    <div role="listitem" class="partners-list-item w-dyn-item">
-                        <img src="https://cdn.prod.website-files.com/67d037daafc2a723ab14fadc/67d96af9a2954603df8b095c_fl25-sponsors-vi.be.svg" loading="lazy" alt="">
-                    </div>
-                    <div role="listitem" class="partners-list-item w-dyn-item">
-                        <img src="https://cdn.prod.website-files.com/67d037daafc2a723ab14fadc/67d96b0e41ed811292a7b77a_fl25-sponsors-belgium-booms.svg" loading="lazy" alt="">
-                    </div>
-                    <div role="listitem" class="partners-list-item w-dyn-item">
-                        <img src="https://cdn.prod.website-files.com/67d037daafc2a723ab14fadc/67d96b90e7534634e71d37d1_fl25-sponsors-bxl-entreprendre.svg" loading="lazy" alt="">
-                    </div>
-                    <div role="listitem" class="partners-list-item w-dyn-item">
-                        <img src="https://cdn.prod.website-files.com/67d037daafc2a723ab14fadc/67d96b54072a918683082154_fl25-sponsors-court-circuit.svg" loading="lazy" alt="">
-                    </div>
-                    <div role="listitem" class="partners-list-item w-dyn-item">
-                        <img src="https://cdn.prod.website-files.com/67d037daafc2a723ab14fadc/67d96b68f2e938916da30cf2_fl25-sponsors-conseil-de-la-musique.svg" loading="lazy" alt="">
-                    </div>
-                    <div role="listitem" class="partners-list-item w-dyn-item">
-                        <img src="https://cdn.prod.website-files.com/67d037daafc2a723ab14fadc/67d96be911a34a6a6cc475da_fl25-sponsors-see-tickets.svg" loading="lazy" alt="">
-                    </div>
-                    <div role="listitem" class="partners-list-item w-dyn-item">
-                        <img src="https://cdn.prod.website-files.com/67d037daafc2a723ab14fadc/67d96b4e64474618a513e22c_fl25-sponsors-sabam-for-culture.svg" loading="lazy" alt=""></div>
-                        <div role="listitem" class="partners-list-item w-dyn-item">
-                            <img src="https://cdn.prod.website-files.com/67d037daafc2a723ab14fadc/67d96b7f39e75bdd38d68dc6_fl25-sponsors-playright.svg" loading="lazy" alt="">
-                        </div>
-                        <div role="listitem" class="partners-list-item w-dyn-item">
-                            <img src="https://cdn.prod.website-files.com/67d037daafc2a723ab14fadc/67d96b5e1f84c62cbf76da0d_fl25-sponsors-lotterie-nationale.svg" loading="lazy" alt="">
-                        </div>
-                        <div role="listitem" class="partners-list-item w-dyn-item">
-                            <img src="https://cdn.prod.website-files.com/67d037daafc2a723ab14fadc/67d96bb04335c70c9b20ab04_fl25-sponsors-ra.svg" loading="lazy" alt="">
-                        </div>
-                        <div role="listitem" class="partners-list-item w-dyn-item">
-                            <img src="https://cdn.prod.website-files.com/67d037daafc2a723ab14fadc/67d96ba816eaa408adbae755_fl25-sponsors-fooding.svg" loading="lazy" alt="">
-                        </div>
-                        <div role="listitem" class="partners-list-item w-dyn-item">
-                            <img src="https://cdn.prod.website-files.com/67d037daafc2a723ab14fadc/67d96b89abda88aa4abe458d_fl25-sponsors-jam.svg" loading="lazy" alt="">
-                        </div>
-                        <div role="listitem" class="partners-list-item w-dyn-item">
-                            <img src="https://cdn.prod.website-files.com/67d037daafc2a723ab14fadc/67d96b99c6037c23fa12c76c_fl25-sponsors-kiosk.svg" loading="lazy" alt="">
-                        </div>
-                        <div role="listitem" class="partners-list-item w-dyn-item">
-                            <img src="https://cdn.prod.website-files.com/67d037daafc2a723ab14fadc/67d96bbe420d8bd0b7324956_fl25-sponsors-konbini.svg" loading="lazy" alt="">
-                        </div>
-                        <div role="listitem" class="partners-list-item w-dyn-item">
-                            <img src="https://cdn.prod.website-files.com/67d037daafc2a723ab14fadc/67d96bc611a34a6a6cc456de_fl25-sponsors-ab.svg" loading="lazy" alt="">
-                        </div>
-                        <div role="listitem" class="partners-list-item w-dyn-item">
-                            <img src="https://cdn.prod.website-files.com/67d037daafc2a723ab14fadc/67d96bcf8892a5cadfc73273_fl25-sponsors-beurschouwburg.svg" loading="lazy" alt="">
-                        </div>
-                        <div role="listitem" class="partners-list-item w-dyn-item">
-                            <img src="https://cdn.prod.website-files.com/67d037daafc2a723ab14fadc/67d96bd55aef4a098f710d1c_fl25-sponsors-beurs.svg" loading="lazy" alt="">
-                        </div>
-                        <div role="listitem" class="partners-list-item w-dyn-item">
-                            <img src="https://cdn.prod.website-files.com/67d037daafc2a723ab14fadc/67d96bdd724f7f60d38033eb_fl25-sponsors-ritcs.svg" loading="lazy" alt="">
-                        </div>
-                    </div>
-                </article>
-</footer>
-
-
-
-
-
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script> 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-<script src="js/index.min.js"></script>
-<script src="js/desktop.min.js"></script>   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/index.min.js"></script>
+    <script src="js/desktop.min.js"></script>
 </body>
 </html>
-
