@@ -22,6 +22,7 @@
     "sass": "^1.86.0"
   },
   "devDependencies": {
+    "cwebp-bin": "^8.0.0",
     "gulp": "^5.0.0"
   },
   "type": "module",
