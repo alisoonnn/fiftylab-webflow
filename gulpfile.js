@@ -75,6 +75,7 @@ function convertToWebp() {
 // Tâche de surveillance des fichiers Sass
 function watchFiles() {
   gulp.watch('src/scss/**/*.scss', compileSass);
+   gulp.watch('src/js/**/*.js', minifyJS);
 }
 
 // Tâche par défaut (exécutée en tapant simplement 'gulp' dans le terminal)
